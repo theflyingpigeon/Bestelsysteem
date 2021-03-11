@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eigengebruik bestelling</title>
+</head>
+<body>
+    <div id="titel">
+        <h1>Eigen gebruikbestelling</h1>
+    </div>
+
+    <p id="demo"></p>
+
+    <script>
+        var fruits, text;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+        document.getElementById("demo").innerHTML = text;
+
+        function myFunction(value) {
+            var $(value[input]) = document.createElement('Input');
+            input.type = "text";
+            text += "<li>" + value + "</li>" + $(value[input]);
+        }
+    </script>
+</body>
+</html>
